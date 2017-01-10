@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>JS Bin</title>
-</head>
-<body>
-    <script>
-      
-    color = "red";
-    var other = { color: "blue" };
-      
-	function sayColor() {
-		document.write( this.color );
-	}
-
-	// The bind() method:
-	// Creates a new function instance whose 'this' value is bound to the value
-	// that was passed into bind().
-		
-	// A new function called objectSayColor() is created from sayColor()
-	// bin calling bind() and passing in the object 'other'. 
-	// The objectSayColor() function has a this value equivalent to other, so calling 
-	// the function, even as a global  call, results in ther string "blue" being displayed.
-	var objectSayColor = sayColor.bind(other);
-
-	objectSayColor();
-
+	<meta charset="utf-8">
+	<title>Webpage Test</title>
+	<style>
+		#sprite {
+			width: 64px; height: 64px;
+			border-radius: 32px;
+			background-color: red;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+	<script>
+		$(document).ready( function(){
+			let $sprite  = $("#sprite");
+			let tl = new TimelineLite();
+			tl.to($sprite, 1, {x:500,ease:Back.easeOut.config(8)},"+=1");
+			
+			let ctx = $("#canvas")[0].getContext("2d");
+			ctx.fillStyle = "red";
+			ctx.scale(2,2);
+			ctx.fillRect(0,0,64,64);
+		});
 	</script>
-        
+</head>
+	<div id="sprite"></div>
+	<canvas id="canvas" width="500" height="500">
+        <!-- Insert fallback content here -->
+        Your browser does not support HTML5 Canvas element.
+    </canvas>
+<body>
 </body>
 </html>
