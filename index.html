@@ -4,7 +4,7 @@
 <head>
   <title>StepTwoSara</title>
   <!-- favicon -->
-  <link href="http://s.gravatar.com/avatar/1d7459ee66a5b9ac9324493d597abbc9?s=80" rel="shortcut icon" />
+  <link href="http://s.gravatar.com/avatar/1d7459ee66a5b9ac9324493d597abbc9?s=80" rel="shortcut icon">
   <!-- Google Fonts: Open Sans, Special Elite, and Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Special+Elite" rel="stylesheet" type="text/css">
@@ -15,9 +15,22 @@
   <link href="styles/main.css" rel="stylesheet" type="text/css" >
 </head>
 
-<body>
+<body class="js-menu-close">
+
+  <div id="sidebar-wrapper" class="js-menu-open">
+
+    <h2>StepTwoSara</h2>
+    <div class="sidebar-links">
+      <div id="close-btn" class="js-menu-close"><img src="img/icons/x.svg" alt="Close menu button"></div>
+      <a href="#about">About</a>
+      <a href="#gallery">Showcase</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
 
   <div id="intro" class="container-fluid hero landscape">
+    <div id="hamburger" class="js-menu-open"><img src="img/icons/menu.svg" alt="Menu button"/></div>
     <h1><strong>StepTwoSara</strong></h1>
     <h5>Dance Performer</h5>
     <a href="#gallery"><button type="button" class="btn-lg btn-primary cta">Showcase</button></a>
@@ -110,7 +123,10 @@
     </div>
   </div> <!-- End div id="footer" -->
 
-  <!-- Bootstrap: Latest compiled and minified JavaScript -->
+<!-- Bootstrap: Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- jQuery 3.1.1 -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
