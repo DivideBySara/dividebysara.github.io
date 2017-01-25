@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+p {
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  font-family: 'Kaushan Script', cursive;
+  margin: 0;
+  padding: 1.5em 0;
+  width: 100%;
+  background-color: #204056;
+  opacity: 0.9;
+}
+
+.nav object {
+  display: flex;
+  margin: auto;
+  height: 2.5em;
+}
+
+.cloud-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12em;
+  font-weight: 400;
+  color: white;
+  margin-top: 0.5em;
+}
+
+.tip {
+  position: fixed;
+  bottom: 0;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+.dance-tip {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+/* for tablets */
+@media only screen and (max-width: 725px) {
+  h1 {font-size: 48px;}
+  .cloud-cover {font-size: 8em}
+}
+/* for phones */
+@media only screen and (max-width: 480px) {
+  h1 {font-size: 36px; }
+  .cloud-cover {font-size: 5em}
+}

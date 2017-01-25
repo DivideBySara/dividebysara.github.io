@@ -1,0 +1,3 @@
+a13f3638a7454a96ff2e5d21252208e8
+
+sample api call: https://api.darksky.net/forecast/a13f3638a7454a96ff2e5d21252208e8/37.8267,-122.4233
