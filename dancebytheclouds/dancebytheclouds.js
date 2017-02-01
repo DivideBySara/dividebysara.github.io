@@ -7,7 +7,7 @@ function main() {
     url: 'https://api.darksky.net/forecast/' + apiKey + '/' + latitude + ',' + longitude,
     dataType: 'jsonp',
     success: function(data) {
-      changeWeatherState(data.currently.cloudCoverage);
+      changeWeatherState(data.currently.cloudCover);
     }
   });
 
@@ -27,7 +27,7 @@ function main() {
     } else {
       $('.cloud-cover').text("Overcast");
       $('.dance-tip').text("Get your dancing fix indoors.");
-      $("body").css("background-image", 'url(\'https://c1.staticflickr.com/9/8306/7995241708_585222311d_b.jpg\')');
+      $("body").css("background-image", 'url(\'https://c1.staticflickr.com/1/106/270251158_ad336b6736_b.jpg\')');
     }
 
   };
