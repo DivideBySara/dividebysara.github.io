@@ -16,18 +16,18 @@ function main() {
       $('.cloud-cover').text("Clear Skies");
       $('.dance-tip').text("Dance under the stars.");
       $("body").css("background-image", 'url(\'https://www.goodfreephotos.com/albums/united-states/wisconsin/wildcat-mountain-state-park/wisconsin-wildcat-mountain-state-park-clear-sky-with-stars.jpg\')');
-    } else if (cloudCoverage >= 0.2 && cloudCoverage <= 0.5) {
+    } else if (cloudCoverage < 0.5) {
       $('.cloud-cover').text("Partly Cloudy");
       $('.dance-tip').text("Find a festival and dance on a picnic table!");
       $("body").css("background-image", 'url(\'https://c1.staticflickr.com/9/8062/8268024894_42497c6ceb_b.jpg\')');
-    } else if (cloudCoverage > 0.5 && cloudCoverage <= 0.75) {
+    } else if (cloudCoverage < 0.75) {
       $('.cloud-cover').text("Mostly Cloudy");
       $('.dance-tip').text("Get your dancing fix before the rain starts!");
       $("body").css("background-image", 'url(\'http://maxpixel.freegreatpicture.com/static/photo/1x/Coast-Horizon-Cloudy-Nature-Dusk-Beach-Dawn-1845714.jpg\')');
     } else {
       $('.cloud-cover').text("Overcast");
       $('.dance-tip').text("Get your dancing fix indoors.");
-      $("body").css("background-image", 'url(\'https://c1.staticflickr.com/1/106/270251158_ad336b6736_b.jpg\')');
+      $("body").css("background-image", 'url(\'https://upload.wikimedia.org/wikipedia/commons/5/58/Overcast_sky.JPG\')');
     }
 
   };

@@ -10,9 +10,9 @@ body {
   text-shadow: 2px 2px 2px #000000;
 }
 
-p {
+/*p {
   font-size: 24px;
-}
+}*/
 
 .nav {
   display: flex;
@@ -23,6 +23,8 @@ p {
   background-color: #204056;
   opacity: 0.9;
 }
+
+h2 {font-size: 3em;}
 
 .nav object {
   display: flex;
@@ -49,18 +51,22 @@ p {
 }
 
 .dance-tip {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 2em;
+  line-height: 2em;
   font-weight: 400;
 }
 
 /* for tablets */
 @media only screen and (max-width: 725px) {
-  h1 {font-size: 48px;}
   .cloud-cover {font-size: 8em}
 }
-/* for phones */
-@media only screen and (max-width: 480px) {
-  h1 {font-size: 36px; }
+/* for phones' *** height *** with 2-word condition like "clear skies" */
+@media only screen and (max-width: 650px) {
+  h2 {font-size: 2em; }
+  h4 {font-size: 1em;}
   .cloud-cover {font-size: 5em}
+  .dance-tip {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
 }
