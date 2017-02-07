@@ -58,13 +58,13 @@ h2 {font-size: 3em;}
 
 /* for tablets */
 @media only screen and (max-width: 725px) {
-  .cloud-cover {font-size: 8em}
+  .cloud-cover {font-size: 8em;}
 }
 /* for phones' *** height *** with 2-word condition like "clear skies" */
 @media only screen and (max-width: 650px) {
   h2 {font-size: 2em; }
   h4 {font-size: 1em;}
-  .cloud-cover {font-size: 5em}
+  .cloud-cover {font-size: 3em;}
   .dance-tip {
     font-size: 1.5em;
     line-height: 1.5em;
