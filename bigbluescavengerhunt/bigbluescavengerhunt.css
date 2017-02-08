@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(to right, rgba(0, 0, 100, 0.9),rgba(0, 100, 50, 0.75), rgba(0, 0, 100, 0.9)), url(https://upload.wikimedia.org/wikipedia/commons/4/4d/Kingcounty-wa.png);
+  background-color: rgba(0, 0, 0. 0.5);
+  background-size: cover;
+  background-attachment: fixed;
+
+  width: 90vw;
+  max-width: 500px;
+  margin: 0em auto;
+  text-align: left;
+  line-height: 1.3em;
+  font-family: 'Oxygen', Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  color: white;
+}
+
+.instructions .title {
+  background-color: rgb(0, 62, 126);
+  padding: 1em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+
+.instructions .text {
+  background-color: white;
+  font-weight: 800;
+  padding: 1em;
+  padding-bottom: 2em;
+  color: rgb(0, 62, 126);
+}
+
+.question {
+  margin: 0 0 1em 0;
+}
+
+.question .title {
+  background-color: #204056;
+  padding: 1em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+}
+
+.question .text {
+  text-align: left;
+  font-weight: 800;
+  padding: 1em;
+  background-color: white;
+  color: rgb(0, 62, 126);
+}
+
+.input-group {
+  margin: 1em 0;
+  border: 2px solid blue;
+}
+
+.input-group input {
+  width: 100%;
+  padding-left: 0.25em;
+  height: 1.5em !important;
+}
+
+input[input="text"] {
+  font-size: 3em;
+  font-family: monospace;
+  text-align: center;
+  font-size: 3em !important;
+  color: HSL(214, 30%, 14%);
+}
+
+.btn-primary {
+  /*background-color: rgb(0, 0, 150);*/
+  background-color: rgb(0, 62, 126);
+  border: none;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: rgb(0, 0, 150);
+  background-image: linear-gradient(to bottom, rgb(0, 0, 255), rgb(0, 0, 150));
+}
+
+.btn-primary.correct-answer {
+  background-color: HSL(18, 98%, 64%) !important;
+  background-image: linear-gradient(-180deg, HSL(18, 98%, 64%) 0%, HSL(18, 98%, 54%) 100%);
+}
+
+.task {
+  display: none;
+  margin: 2em 0;
+}
+
+.task.disabled {
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.task.question-0 {
+  display: block;
+}
+
+img.ST-badge {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 200px;
+}
