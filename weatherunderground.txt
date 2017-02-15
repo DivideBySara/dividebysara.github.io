@@ -1,0 +1,4 @@
+28936fd9bd25aae4
+
+using Arboretum zip code
+http://api.wunderground.com/api/28936fd9bd25aae4/geolookup/conditions/q/98112.json
