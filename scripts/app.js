@@ -35,7 +35,7 @@ $(document).ready(function () {
       // base morning, afternoon, and night on the timeOfDay
       if (hours > 17 || hours < 6) {
         timeOfDay = "night";
-      } else if (hours > 11 || hours < 18) {
+      } else if (hours > 11 && hours < 18) {
         timeOfDay = "afternoon";
       } else { // It's morning!
         timeOfDay = "morning";
