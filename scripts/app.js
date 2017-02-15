@@ -17,7 +17,7 @@ $(document).ready(function () {
     getTimeOfDay();
 
     function getWeather() {
-      $.ajax({url: "http://api.wunderground.com/api/28936fd9bd25aae4/geolookup/conditions/q/98112.json",
+      $.ajax({url: "https://api.wunderground.com/api/28936fd9bd25aae4/geolookup/conditions/q/98112.json",
              datatype: "jsonp",
              success: function(response) {
                let conditions = response.current_observation.weather;
