@@ -72,7 +72,7 @@ accessed 3/30/17
 // get global JSON object
 let myData = $.ajax({
   type: 'GET',
-  url: "https://ec2-54-201-29-242.us-west-2.compute.amazonaws.com/rest/ehr/feature?limit=35&fields=id%2C%20category_id%2C%20feature_name%2C%20feature_desc&app_name=ehrSelect",
+  url: "http://ec2-54-201-29-242.us-west-2.compute.amazonaws.com/rest/ehr/feature?limit=35&fields=id%2C%20category_id%2C%20feature_name%2C%20feature_desc&app_name=ehrSelect",
   dataType: 'json',
   global: false,
   async: false,
@@ -89,7 +89,7 @@ let myData = $.ajax({
 // Create array of maps from JSON object
 let myArrayOfMaps = [];
 function createMyDataArray(myArrayOfMaps) {
-  for (i = 0; i < myData.record.length; i++) {
+  for (let i = 0; i < myData.record.length; i++) {
     myArrayOfMaps.push(myData.record[i]);
   }
 }
@@ -97,9 +97,9 @@ createMyDataArray(myArrayOfMaps);
 
 // Create 2D array from array of maps
 let my2DArray = [];
-for (record in myArrayOfMaps) {
+for (let record in myArrayOfMaps) {
   let myArray = [];
-  for (field in myArrayOfMaps[record]) {
+  for (let field in myArrayOfMaps[record]) {
     myArray.push(myArrayOfMaps[record][field]);
   }
   my2DArray.push(myArray);
