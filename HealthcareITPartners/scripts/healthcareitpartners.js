@@ -72,7 +72,7 @@ accessed 3/30/17
 // get global JSON object
 let myData = $.ajax({
   type: 'GET',
-  url: "http://ec2-54-201-29-242.us-west-2.compute.amazonaws.com/rest/ehr/feature?limit=35&fields=id%2C%20category_id%2C%20feature_name%2C%20feature_desc&app_name=ehrSelect",
+  url: "https://ec2-54-201-29-242.us-west-2.compute.amazonaws.com/rest/ehr/feature?limit=35&fields=id%2C%20category_id%2C%20feature_name%2C%20feature_desc&app_name=ehrSelect",
   dataType: 'json',
   global: false,
   async: false,
